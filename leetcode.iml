@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/google下载/xmlbeans-bin-3.1.0/xmlbeans-3.1.0/lib/resolver.jar!/" />
+          <root url="jar://E:/google下载/xmlbeans-bin-3.1.0/xmlbeans-3.1.0/lib/xmlbeans-3.1.0-sources.jar!/" />
+          <root url="jar://E:/google下载/xmlbeans-bin-3.1.0/xmlbeans-3.1.0/lib/xmlbeans-3.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://E:/google下载/xmlbeans-bin-3.1.0/xmlbeans-3.1.0/lib/xmlbeans-3.1.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://E:/google下载/xmlbeans-bin-3.1.0/xmlbeans-3.1.0/lib/xmlbeans-3.1.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/google下载/com.lowagie.text-2.1.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
