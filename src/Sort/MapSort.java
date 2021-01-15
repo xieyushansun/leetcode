@@ -1,3 +1,5 @@
+package Sort;
+
 import java.util.*;
 
 public class MapSort {
@@ -64,7 +66,7 @@ public class MapSort {
         // 1. 将map转为list
         List<Map.Entry<String, Integer>> list = new ArrayList<>(map.entrySet());
         // 2. 排序
-        Collections.sort(list, new Comparator<>() {
+        Collections.sort(list, new Comparator<Map.Entry<String, Integer>>() {
             @Override
             public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
                 return mm.get(o2.getKey()) - mm.get(o1.getKey());

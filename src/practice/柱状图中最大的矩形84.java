@@ -1,9 +1,9 @@
+package practice;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.Iterator;
-import java.util.Stack;
 
-class Solution {
+class 柱状图中最大的矩形84 {
     public static void main(String[] args){
         int[] height = {2, 2};
         int area = largestRectangleArea(height);
@@ -34,18 +34,13 @@ class Solution {
                 if (heights[i] > heights[deque.peek()]){
                     maxAreaLTR[i] = deque.peek();
                     deque.push(i);
-                }else if (heights[i] == heights[deque.peek()]){
-                    maxAreaRTL[i] = deque.peek();
                 }else {
-                    while (!deque.isEmpty() && heights[deque.peek()] > heights[i]){
+                    while (!deque.isEmpty() && heights[deque.peek()] >= heights[i]){
                         deque.pop();
                     }
                     if (deque.isEmpty()){
                         maxAreaLTR[i] = -1;
                         deque.push(i);
-
-
-
                     }else {
                         maxAreaLTR[i] = deque.peek();
                         deque.push(i);
@@ -63,12 +58,8 @@ class Solution {
                 if (heights[i] > heights[deque.peek()]){
                     maxAreaRTL[i] = deque.peek();
                     deque.push(i);
-                }else if (heights[i] == heights[deque.peek()]){
-//                    deque.pop();
-                    deque.push(i);
-                    maxAreaRTL[i] = deque.peek();
                 }else {
-                    while (!deque.isEmpty() && heights[deque.peek()] > heights[i]){
+                    while (!deque.isEmpty() && heights[deque.peek()] >= heights[i]){
                         deque.pop();
                     }
                     if (deque.isEmpty()){
@@ -82,6 +73,7 @@ class Solution {
             }
         }
         int max = 0;
+        // 计算面积
         for (int i = 0; i < heights.length; i++){
             max = Math.max(max, heights[i] * (maxAreaRTL[i] - maxAreaLTR[i] - 1));
         }

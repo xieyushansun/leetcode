@@ -1,10 +1,10 @@
-package demo;
+package practice;
 
 public class KMP {
     public static void main(String args[]){
         String str1 = "GTGTGAGCTGGTGTGTGCFAA";
         String str2 = "GTGTGCF";
-//        KMP(str1, str2);
+//        practice.KMP(str1, str2);
         KMP kmp = new KMP();
         int next[] = kmp.getNext(str2);
 //        int next[] = getNext(str2);
